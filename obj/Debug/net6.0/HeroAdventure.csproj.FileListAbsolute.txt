@@ -1,0 +1,15 @@
+C:\Users\Filipe\Desktop\Dio novo projeto\DIO Game RPG\HeroAdventure\obj\Debug\net6.0\HeroAdventure.csproj.AssemblyReference.cache
+C:\Users\Filipe\Desktop\Dio novo projeto\DIO Game RPG\HeroAdventure\obj\Debug\net6.0\HeroAdventure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Filipe\Desktop\Dio novo projeto\DIO Game RPG\HeroAdventure\obj\Debug\net6.0\HeroAdventure.AssemblyInfoInputs.cache
+C:\Users\Filipe\Desktop\Dio novo projeto\DIO Game RPG\HeroAdventure\obj\Debug\net6.0\HeroAdventure.AssemblyInfo.cs
+C:\Users\Filipe\Desktop\Dio novo projeto\DIO Game RPG\HeroAdventure\obj\Debug\net6.0\HeroAdventure.csproj.CoreCompileInputs.cache
+C:\Users\Filipe\Desktop\Dio novo projeto\DIO Game RPG\HeroAdventure\bin\Debug\net6.0\HeroAdventure.exe
+C:\Users\Filipe\Desktop\Dio novo projeto\DIO Game RPG\HeroAdventure\bin\Debug\net6.0\HeroAdventure.deps.json
+C:\Users\Filipe\Desktop\Dio novo projeto\DIO Game RPG\HeroAdventure\bin\Debug\net6.0\HeroAdventure.runtimeconfig.json
+C:\Users\Filipe\Desktop\Dio novo projeto\DIO Game RPG\HeroAdventure\bin\Debug\net6.0\HeroAdventure.dll
+C:\Users\Filipe\Desktop\Dio novo projeto\DIO Game RPG\HeroAdventure\bin\Debug\net6.0\HeroAdventure.pdb
+C:\Users\Filipe\Desktop\Dio novo projeto\DIO Game RPG\HeroAdventure\obj\Debug\net6.0\HeroAdventure.dll
+C:\Users\Filipe\Desktop\Dio novo projeto\DIO Game RPG\HeroAdventure\obj\Debug\net6.0\refint\HeroAdventure.dll
+C:\Users\Filipe\Desktop\Dio novo projeto\DIO Game RPG\HeroAdventure\obj\Debug\net6.0\HeroAdventure.pdb
+C:\Users\Filipe\Desktop\Dio novo projeto\DIO Game RPG\HeroAdventure\obj\Debug\net6.0\HeroAdventure.genruntimeconfig.cache
+C:\Users\Filipe\Desktop\Dio novo projeto\DIO Game RPG\HeroAdventure\obj\Debug\net6.0\ref\HeroAdventure.dll
