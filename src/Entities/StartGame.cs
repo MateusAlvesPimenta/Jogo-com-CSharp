@@ -1,4 +1,3 @@
-// using CharacterEntity;
 using static System.Console;
 using EnemyEntity;
 using CreateCharacterEntity;

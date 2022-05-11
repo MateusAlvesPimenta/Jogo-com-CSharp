@@ -1,5 +1,4 @@
 using CharacterEntity;
-// using static System.Console;
 
 namespace KnightEntity{
     public class Knight : Character
