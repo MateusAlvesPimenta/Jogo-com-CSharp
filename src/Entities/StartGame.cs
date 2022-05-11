@@ -38,7 +38,7 @@ namespace StartGameEntity
                 
             while(PlayerHealth>0 && MonsterHealth>0)
             {
-                // Thread.Sleep(3000);
+                Thread.Sleep(3000);
                 WriteLine($@"
                 Fase {Phase}
                 ");
@@ -60,7 +60,7 @@ namespace StartGameEntity
                     {
                         WriteLine(Player.Attack(1));
                         MonsterHealth-=Player.Damage;
-                        // Thread.Sleep(2000);
+                        Thread.Sleep(2000);
 
                         if(MonsterHealth>0)
                         {
@@ -78,7 +78,7 @@ namespace StartGameEntity
                     {
                         WriteLine(@"
                         Você não possui energia suficiente");
-                        // Thread.Sleep(2000);
+                        Thread.Sleep(2000);
                         
                         WriteLine(Monster.Attack(0));
                         PlayerHealth-=Monster.Damage;
@@ -88,7 +88,7 @@ namespace StartGameEntity
                 {
                     WriteLine(Player.Attack(0));
                     MonsterHealth-=Player.Damage;
-                    // Thread.Sleep(2000);
+                    Thread.Sleep(2000);
                     
                     if(MonsterHealth>0)
                     {
