@@ -3,7 +3,7 @@
 🚀 atividade do bootcamp Impulso FullStack Web Developer da Digital Inovation One
 
 ##  🛠️ Construído com 
-![C#](https://img.shields.io/badge/c sharp-%237E4798.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
+![C#](https://img.shields.io/badge/csharp-%237E4798.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
 
 # 🤔 Qual o objetivo deste projeto ?
 
