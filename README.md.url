@@ -1,2 +1,0 @@
-[InternetShortcut]
-URL=https://github.com/MateusAlvesPimenta/Jogo-com-CSharp/blob/master/README.md
