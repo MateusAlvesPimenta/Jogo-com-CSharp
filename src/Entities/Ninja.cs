@@ -1,6 +1,6 @@
 using CharacterEntity;
 
-namespace NinjaEntity
+namespace ClassesEntity
 {
     public class Ninja : Character
     {

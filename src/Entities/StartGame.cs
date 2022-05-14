@@ -1,11 +1,13 @@
 using static System.Console;
 using EnemyEntity;
-using CreateCharacterEntity;
+using CharacterEntity;
 namespace StartGameEntity
 {
-    public class StartGame : CreateCharacter
+    public class StartGame
     {   
-        public static void Attack(){}
+        public static Character Player;
+        public static string Name;
+        public static string TypeCharacter;
         public static int PlayerHealth;
         public static int MonsterHealth;
         public static int Phase=1;
@@ -13,22 +15,29 @@ namespace StartGameEntity
         public static Enemy Monster = new Enemy(Phase);
         public StartGame()
         {
-            WriteLine(@"
-            Deseja iniciar uma luta?
-            Sim ou Não?
-            ");
-            Entry = (ReadLine()+Entry).ToUpper();
-            if(Entry[0]=='S'){
+            CharacterBuilder();
             Fight();
-            }
-            else if(Entry[0]=='N'){
-                WriteLine("Volte quando estiver pronto");
-            }
-            else{
-                throw new ArgumentException("Opção invalida");
-            }
         }
-        public static void Fight()
+        public void CharacterBuilder()
+        {
+            WriteLine(@"
+            Como se chamará seu herói?
+            ");
+            Name = ReadLine();
+
+            WriteLine(@"
+            Escolha uma classe para seu herói:
+
+            Knight - Um grande herói, temido pela sua habilidade com espadas.
+            Ninja - Rapido, discreto e letal, ele possui um pouco de cada classe.
+            Wizard - Com seu grande conhecimento em magia este mago pode se encarregar de qualquer inimigo.
+            Black Wizard - Um mago que passou para o lado obscuro da magia e se tornou o mais forte de todos os magos.
+            ");
+            TypeCharacter = ReadLine().ToUpper();
+            
+            new Character(Name,TypeCharacter);
+        }
+        public void Fight()
         {
             PlayerHealth = Player.Health;
             MonsterHealth = Monster.Health;
@@ -52,10 +61,25 @@ namespace StartGameEntity
                 Atacar
                 Especial
                 Defender");
-                Entry = (ReadLine()+Entry).ToUpper();
+                Entry = ReadLine().ToUpper();
 
                 if(Entry[0]=='E'){
-                    if(Player.Energy >= 2)
+                    EspecialAttack();
+                }
+                else if(Entry[0]=='A')
+                {
+                    CommonAttack();
+                }
+                else if(Entry[0]=='D')
+                {   
+                    BlockAttack();
+                }
+            }
+            FightResult();
+        }
+        public void EspecialAttack()
+        {
+            if(Player.Energy >= 2)
                     {
                         WriteLine(Player.Attack(1));
                         MonsterHealth-=Player.Damage;
@@ -82,10 +106,10 @@ namespace StartGameEntity
                         WriteLine(Monster.Attack(0));
                         PlayerHealth-=Monster.Damage;
                     }
-                }
-                else if(Entry[0]=='A')
-                {
-                    WriteLine(Player.Attack(0));
+        }
+        public void CommonAttack()
+        {
+            WriteLine(Player.Attack(0));
                     MonsterHealth-=Player.Damage;
                     Thread.Sleep(2000);
                     
@@ -99,21 +123,20 @@ namespace StartGameEntity
                         Write($@"
                         {Monster.Name} morreu");
                     }
-                }
-                else if(Entry[0]=='D')
-                {   
-                    Player.Energy++;
-                    Monster.Attack(0);
-                    WriteLine($@"
-                    {Monster.Name} atacou mas não causou danos");
-                }
-            }
-            FightResult();
         }
-        public static void FightResult()
+        public void BlockAttack()
+        {
+            Player.Energy++;
+            Monster.Attack(0);
+            WriteLine($@"
+            {Monster.Name} atacou mas não causou danos");
+        }
+        public void FightResult()
         {
             if(MonsterHealth<=0)
             {                
+                Player.LevelUp();
+                Monster.LevelUp();
 
                 WriteLine($@"
                 Parabens {Player.Name}, voce derrotou o {Monster.Name} e passou agr para o level {Player.Level}
@@ -121,11 +144,9 @@ namespace StartGameEntity
                 Deseja iniciar a proxima luta?
                 Sim ou Não?
                 ");
-                Entry = (ReadLine()+Entry).ToUpper();
+                Entry = ReadLine().ToUpper();
                 if(Entry[0]=='S'){
                     Phase++;
-                    Player.LevelUp();
-                    Monster.LevelUp();
                     Fight();
                 }
             }

@@ -1,5 +1,5 @@
 using CharacterEntity;
-namespace WizardEntity
+namespace ClassesEntity
 {
     public class Wizard : Character
     {

@@ -1,6 +1,6 @@
 using CharacterEntity;
 
-namespace KnightEntity{
+namespace ClassesEntity{
     public class Knight : Character
     {
         public Knight(string Name)

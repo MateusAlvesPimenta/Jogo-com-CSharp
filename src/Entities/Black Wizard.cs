@@ -1,13 +1,13 @@
 using CharacterEntity;
 
-namespace BlackWizardEntity
+namespace ClassesEntity
 {
     public class BlackWizard : Character
     {
-        public int Multiplier=5;
-        public BlackWizard(string Name)
+        private int Multiplier=5;
+        public BlackWizard(string name)
         {
-            this.Name = Name;
+            this.Name = name;
             this.TypeCharacter = "Black Wizzard";
             this.Energy = 2;
             BuildStats();
