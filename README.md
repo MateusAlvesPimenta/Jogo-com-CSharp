@@ -9,7 +9,7 @@
 
   O foco desta atividade é praticar POO (Programação Orientada a Objetos) e para isso foi feita a criação dos personagens e um ataque para que nós, alunos nos familiarizarmos com a linguagem C#, POO e seus quatro pilares.
   
-## 🕹️ O que contem este jogo?
+## 🕹️ O que contem neste jogo?
 
   Este jogo contem criação personalizada de personagens com escolha de classes e nome.
   Sistema de lutas infinitas com um boss a cada 10 niveis.
